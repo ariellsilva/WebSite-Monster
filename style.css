@@ -1,0 +1,459 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #0b0b0b;
+    color: #e0e0e0;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+}
+.imagem img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+}
+.menu{
+  background-color: #000000;
+  border-bottom: 2px solid #50b848;
+  top: 0;
+  position:sticky;
+  z-index:1000;
+}
+.menu a{
+    text-decoration: none;
+    padding: 8px 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+.menu a:hover{
+    background-color: #50b848;
+    color: #ffffff;
+}
+#produtos {
+    background: #0d0d0d;
+    padding: 60px 5%;
+}
+.produto-lista {
+    display: flex;
+    gap: 25px;
+    overflow-x: auto;
+    text-align: center;
+    scrollbar-width: none; 
+    padding: 15px 5px;
+    justify-content: flex-start;
+}
+.produto-lista img{
+    width: 260px;
+    height: 225px;
+}
+.produto-lista > div :hover {
+    transform: scale(1.05);
+}
+.produtos h3 {
+    font-family: 'Oswald', sans-serif;
+    color: #000000;
+    font-size: 15px;
+    text-shadow: 0 0 10px #11ff00, 0 0 20px #ffffff;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.conteudo-historia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    gap: 40px; 
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.historia-imagem img {
+    width: 320px;
+    height: auto;
+    border-radius: 8px;
+}
+section{
+    padding: 50px 20px;
+}
+#esportes {
+    background-color: #0b0b0b; 
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+    background-size: cover;
+    color: #ffffff;
+    padding: 60px 0;
+    text-align: center; 
+}
+.esportes-imagem img {
+    position: relative;
+    right: 8%;
+}
+.esportes-texto {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.esportes-lista img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    margin-bottom: 5px;
+    border: 3px solid #1c881c;
+}
+.esportes-lista > div:hover{
+   transform: scale(1.05);
+}
+h3 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #ffffff;
+}
+.esportes-lista {
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 10px; 
+    justify-content: center; 
+}
+.esportes-lista h3{
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.esportes p {
+    font-size: 17px;
+    line-height: 1.6;
+    margin-bottom: 40px;
+    color: #ccccccb0;
+}
+p, li {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #cccccc;
+}
+.esportes-lista div {
+    padding: 15px;
+    text-align: center;
+    transition: all 0.3s ease; 
+}
+.esportes-lista div:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 10px #50b848, 0 0 20px #50b848; 
+}
+.curiosidades-texto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+.curiosidades-titulo{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.curiosidades-texto ul {
+    list-style-type: none;
+}
+.curiosidades-texto li {
+    background: #141414;
+    margin-bottom: 12px;
+    padding: 12px 18px;
+    border-radius: 6px;
+    border-left: 3px solid #50b848;
+}
+.contato-texto{
+    text-align: center;
+}
+.curiosidades-imagem img {
+    width: 300px;
+    max-width: 100%;
+    border-radius: 12px;
+}
+.contato-formulario {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    background-color: #141414;
+    padding: 20px;
+    border-radius: 16px;
+    border: 1px solid #222;
+    max-width: 900px;
+    margin: 0 auto;
+    position: relative;
+    top: -70px;
+}
+button{
+    padding: 12px;
+    background-color: #50b848;
+    border-radius: 6px;
+    color: #f7f3f3;
+    font-size: 1rem;
+}
+.contato-imagem img {
+    width: 300px;
+    border-radius: 8px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+label{
+    margin-bottom: 5px;
+    margin-top: 15px;
+    font-weight: bold;
+    color: #50b848;
+}
+input, textarea {
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #333;
+    background-color: #222;
+    color: #fff;
+    font-size: 1rem;
+    outline: none;
+}
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #050505;
+    border-top: 1px solid #222;
+    color: #777;
+    border-top: 5px solid green;
+}
+.logo-mudar {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    right: 0;
+    transform: translate(-50%, -50%);
+
+    display: flex;
+    justify-content: space-between; 
+    padding: 0 20px; 
+    pointer-events: none;
+}
+.logo-mudar button {
+    pointer-events: auto;
+    background-color: rgba(0, 0, 0, 0.7); 
+    color: #ffffff;
+    border: 2px solid #50b848;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    outline: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: #ffffff;
+    text-shadow: 0 0 10px #50b848, 0 0 20px #50b848;
+    text-align: center;
+    margin: 30px 0;
+}
+h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #ffffff;
+    text-shadow: 0 0 10px #50b848, 0 0 20px #50b848;  
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+@media(max-width: 720px){
+    body{
+        overflow-x: hidden;
+    }
+    .logo-mudar {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    right: 0;
+    transform: translate(-50%, -50%);
+
+    display: flex;
+    justify-content: space-between; 
+    padding: 0 20px; 
+    pointer-events: none;
+}
+.logo-mudar button {
+    width: 10px;
+    height: 10px;
+}
+.menu a{
+    text-decoration: none;
+    padding: 8px 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 12px;
+}
+h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: #ffffff;
+    text-shadow: 0 0 10px #50b848, 0 0 20px #50b848;
+    text-align: center;
+    margin: 30px 0;
+}
+.produto-lista h3{
+    font-size: 12px;
+}
+.produto-lista {
+    display: flex;
+    gap: 25px;
+    overflow-x: auto;
+    scrollbar-width: none; 
+    padding: 15px 5px;
+    justify-content: flex-start;
+}
+.produto-lista img{
+    width: 205px;
+    height: 190px;
+}
+.conteudo-historia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 20px;
+    gap: 40px; 
+    position: relative;
+    flex-direction: column;
+    left: 52px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+.historia-imagem img {
+    width: 220px;
+    height: auto;
+    position: relative;
+    right: 50px;
+    border-radius: 8px;
+}
+.conteudo-historia p {
+    font-size: 13px;
+    text-align: center;
+    max-width: 90%;
+    position: relative;
+    right: 30px;
+}
+.conteudo-historia h2 {
+   font-size: 20px;
+   position: relative;
+   right: 42px;
+}
+.esportes-imagem img{
+    width: 410px;
+    position: relative;
+    right: 50px;
+}
+.esportes-texto h2{
+    font-size: 20px;
+    position: relative;
+    left: 20px;
+}
+.esportes-texto p{
+   font-size: 13px;
+}
+.esportes-lista img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-bottom: 5px;
+    border: 3px solid #1c881c;
+}
+.esportes-lista h3 {
+    font-size: 10px;
+}
+.curiosidades-texto{
+    flex-direction: column-reverse;
+}
+.curiosidades-titulo h2{
+    font-size: 20px;
+    position: relative;
+    left: 20px;
+}
+.curiosidades-titulo p{
+   font-size: 13px;
+}
+.curiosidades-texto li {
+    background: #141414;
+    margin-bottom: 12px;
+    padding: 12px 18px;
+    border-radius: 6px;
+    border-left: 3px solid #50b848;
+    font-size: 12px;
+}
+.curiosidades-imagem img {
+   width: 220px;
+   height: 250px;
+}
+.contato-texto h2{
+    font-size: 20px;
+    position: relative;
+    left: 10px;
+}
+.contato-texto p {
+    font-size: 12px;
+}
+.contato-formulario {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    background-color: #141414;
+    padding: 20px;
+    border-radius: 16px;
+    border: 1px solid #222;
+    max-width: 900px;
+    margin: 0 auto;
+    position: relative;
+    top: -50px;
+}
+.contato-imagem img {
+    width: 250px;
+    border-radius: 8px;
+}
+label{
+    font-size: 14px;
+}
+input, textarea {
+    padding: 5px;
+    border-radius: 6px;
+    border: 1px solid #333;
+    background-color: #222;
+    color: #fff;
+    outline: none;
+}
+form{
+    position: relative;
+    left: 15px;
+    top: -65px;
+}
+button{
+    padding: 12px;
+    background-color: #50b848;
+    border-radius: 6px;
+    color: #f7f3f3;
+    font-size: 14px;
+}
+.contato-formulario{
+    flex-wrap: wrap;
+}
+  }
