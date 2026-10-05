@@ -88,3 +88,24 @@ body {
     display: flex;
     align-items: center;
 }
+@media(max-width:720px){
+ .texto-video h1{
+    font-size: 20px;
+ }
+ .texto-video p {
+    width: 100%;
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+.conteudo-video{
+    flex-direction: column;
+    padding: 0 25px;
+    gap: 10px;
+}
+.video-container{
+    display: block;
+    text-align: center;
+    width: 250px;
+
+}
+}
